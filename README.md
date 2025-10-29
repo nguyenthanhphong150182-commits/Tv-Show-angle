@@ -1,4 +1,19 @@
-import React, { useState, useRef, useEffect } from "react";
+const initialLayers = [
+  { id: "bg", name: "Background", src: "/pngtuber/bg.png", x: 0, y: 0, scale: 1, visible: true, z: 0 },
+  { id: "body", name: "Body", src: "/pngtuber/body.png", x: 0, y: 0, scale: 1, visible: true, z: 10 },
+  { id: "eyes", name: "Eyes", src: "/pngtuber/eyes.png", x: 0, y: -10, scale: 1, visible: true, z: 20 },
+  { id: "mouth", name: "Mouth", src: "/pngtuber/mouth.png", x: 0, y: 30, scale: 1, visible: true, z: 30 },
+  { id: "acc", name: "Accessory", src: "/pngtuber/acc.png", x: 20, y: -20, scale: 1, visible: true, z: 40 },
+];const initialLayers = [
+  { id: "bg", name: "Background", src: "/pngtuber/bg.png", x: 0, y: 0, scale: 1, visible: true, z: 0 },
+  { id: "body", name: "Body", src: "/pngtuber/body.png", x: 0, y: 0, scale: 1, visible: true, z: 10 },
+  { id: "eyes", name: "Eyes", src: "/pngtuber/eyes.png", x: 0, y: -10, scale: 1, visible: true, z: 20 },
+  { id: "mouth", name: "Mouth", src: "/pngtuber/mouth.png", x: 0, y: 30, scale: 1, visible: true, z: 30 },
+  { id: "acc", name: "Accessory", src: "/pngtuber/acc.png", x: 20, y: -20, scale: 1, visible: true, z: 40 },
+];public/pngtuber/body.png
+public/pngtuber/eyes.png
+public/pngtuber/mouth.png
+public/pngtuber/acc.pngimport React, { useState, useRef, useEffect } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 export default function PNGtuber() {
